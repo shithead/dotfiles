@@ -229,45 +229,45 @@ mcabber_notify = wibox.widget.textbox()
 mytextclock = awful.widget.textclock()
 
 -- Separator/Spacer icons
--- separator = wibox.widget.textbox()
--- separator:set_text( '<span color="#A9D7F2"> || </span>' )
--- space = widget.textbox()
--- space:set_text("  ")
--- -- Readout
--- 	-- Icon
--- 	cpuicon = widget.imagebox()
--- 	cpuicon.set_image(beautiful.widget_cpu)
--- 	-- Percentage
--- 	cpu1 = widget.textbox()
--- 	vicious.register(cpu1, vicious.widgets.cpu, "(1): $1%")
--- 	cpu2 = widget.textbox()
--- 	vicious.register(cpu2, vicious.widgets.cpu, "(2): $2%")
--- 	-- Meter
--- 	cpubar = awful.widget.progressbar()
--- 	cpubar:set_width(50)
--- 	cpubar:set_height(8)
--- 	cpubar:set_vertical(false)
--- 	cpubar:set_background_color("#3F3F3F")
--- 	cpubar:set_color(beautiful.bg_urgent )
--- 	vicious.register(cpubar, vicious.widgets.cpu, "$1", 7)
--- 
--- 	cpubar2 = awful.widget.progressbar()
--- 	cpubar2:set_width(50)
--- 	cpubar2:set_height(8)
--- 	cpubar2:set_vertical(false)
--- 	cpubar2:set_background_color("#3F3F3F")
--- 	cpubar2:set_color(beautiful.bg_urgent )
--- 	vicious.register(cpubar2, vicious.widgets.cpu, "$2", 7)
--- 	-- Align progressbars
--- 	awful.widget.layout.margins[cpubar.widget] = { top = 2 }
--- 	awful.widget.layout.margins[cpubar2.widget] = { top = 2 }
--- 	-- Frequency
--- 	freq1 = widget.textbox()
--- 	vicious.register(freq1, vicious.widgets.cpufreq, "$2 Ghz", 9, "cpu0")
--- 	freq2 = widget.textbox()
--- 	vicious.register(freq2, vicious.widgets.cpufreq, "$2 Ghz", 9, "cpu1")
--- 	-- Cache that shit
--- 	vicious.cache(vicious.widgets.cpu)
+separator = wibox.widget.textbox()
+separator:set_text( '<span color="#A9D7F2"> || </span>' )
+space = widget.textbox()
+space:set_text("  ")
+-- Readout
+	-- Icon
+	-- cpuicon = widget.imagebox()
+	-- cpuicon.set_image(beautiful.widget_cpu)
+	-- Percentage
+--	cpu1 = widget.textbox()
+--	vicious.register(cpu1, vicious.widgets.cpu, "(1): $1%")
+--	cpu2 = widget.textbox()
+--	vicious.register(cpu2, vicious.widgets.cpu, "(2): $2%")
+--	-- Meter
+--	cpubar = awful.widget.progressbar()
+--	cpubar:set_width(50)
+--	cpubar:set_height(8)
+--	cpubar:set_vertical(false)
+--	cpubar:set_background_color("#3F3F3F")
+--	cpubar:set_color(beautiful.bg_urgent )
+--	vicious.register(cpubar, vicious.widgets.cpu, "$1", 7)
+--
+--	cpubar2 = awful.widget.progressbar()
+--	cpubar2:set_width(50)
+--	cpubar2:set_height(8)
+--	cpubar2:set_vertical(false)
+--	cpubar2:set_background_color("#3F3F3F")
+--	cpubar2:set_color(beautiful.bg_urgent )
+--	vicious.register(cpubar2, vicious.widgets.cpu, "$2", 7)
+--	-- Align progressbars
+--	awful.widget.layout.margins[cpubar.widget] = { top = 2 }
+--	awful.widget.layout.margins[cpubar2.widget] = { top = 2 }
+--	-- Frequency
+--	freq1 = widget.textbox()
+--	vicious.register(freq1, vicious.widgets.cpufreq, "$2 Ghz", 9, "cpu0")
+--	freq2 = widget.textbox()
+--	vicious.register(freq2, vicious.widgets.cpufreq, "$2 Ghz", 9, "cpu1")
+--	-- Cache that shit
+--	vicious.cache(vicious.widgets.cpu)
 
 -- Create a wibox for each screen and add it
 mywibox = {}

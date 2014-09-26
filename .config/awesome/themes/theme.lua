@@ -104,10 +104,10 @@ theme.wallpapers = {
             {"/usr/home/PwnyTail/.config/awesome/themes/black_hex_wallpaper_by_siege36.jpg", center = true},
             {"/usr/home/PwnyTail/.config/awesome/themes/dark-fog-forest-wallpaper_1440-900.jpg", center = true},
             {"/usr/home/PwnyTail/.config/awesome/themes/dark-tamar20_1440-900.jpg", center = true},
-            {"/usr/home/PwnyTail/.config/awesome/themes/dark-forest_street.jpg", center = true},
+            {"/usr/home/PwnyTail/.config/awesome/themes/dark-forest_street.png", center = true},
 }
 
-theme.wallpaper = theme.wallpapers[1][8]
+theme.wallpaper = theme.wallpapers[1][7]
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "/usr/home/PwnyTail/.config/awesome/themes/layouts/fairhw.png"
