@@ -1,0 +1,34 @@
+URxvt*termName: rxvt-unicode-256color
+URxvt*fading: 20
+URxvt*font: xft:Fixed:regular:size=12
+#URxvt*font: xft:Fixed:regular:size=14
+URxvt.depth: 32
+URxvt.thickness: 6.5
+URxvt*transparent: on
+URxvt*shading: 45
+!Urxvt.tabbed.tabbar-fg: 2
+!Urxvt.tabbed.tabbar-bg: 0
+!Urxvt.tabbed.tab-fg: 10
+!Urxvt.tabbed.tab-bg: 6
+
+
+URxvt.foreground: grey90
+URxvt.background: gray50
+URxvt.cursorBlink: true
+URxvt.cursorColor: gray70
+URxvt.cursorColor2: #384318
+URxvt.scrollBar: on
+URxvt.saveLines: 1000
+
+URxvt.perl-ext-common:default,tabbedex,matcher
+!URxvt.perl-ext-common:default,tabbed,matcher
+URxvt.tabbed.autohide: true
+URxvt.urlLauncher:  /usr/local/bin/firefox
+URxvt.matcher.button: 3
+
+! xclock ---------------------------------------------------------------------
+
+xclock*update:            1
+xclock*analog:            false
+xclock*Foreground:        white
+xclock*background:        black
