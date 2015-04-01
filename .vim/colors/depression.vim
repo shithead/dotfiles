@@ -27,7 +27,7 @@ hi StatusLine                       cterm=NONE  ctermfg=251 ctermbg=241 gui=bold
 hi StatusLineNC                                 ctermfg=246             gui=bold   guifg=PeachPuff     guibg=Gray45
 hi VertSplit    term=reverse                    ctermfg=246             gui=bold   guifg=White         guibg=Gray45
 hi Title        term=bold                       ctermfg=134             gui=bold   guifg=DeepPink3
-hi Visual                           cterm=reverse ctermfg=236 ctermbg=226  gui=reverse guifg=Grey80     guibg=fg
+hi Visual                           cterm=bold  ctermfg=226  ctermbg=236  gui=reverse guifg=Grey80     guibg=fg
 hi VisualNOS    term=bold,underline cterm=bold,underline                gui=bold,underline
 hi WarningMsg   term=standout                   ctermfg=1               gui=bold   guifg=Red
 hi WildMenu     term=standout       cterm=bold  ctermfg=50  ctermbg=236            guifg=Black         guibg=Yellow

@@ -102,7 +102,7 @@ theme.wallpapers = {
             {"/usr/home/PwnyTail/.config/awesome/themes/pano-bg.png", center = true},
             {"/usr/home/PwnyTail/.config/awesome/themes/300_movie_mac_linux_tux_gnu_debian_bsd_windows_1440x900.png", center = true},
             {"/usr/home/PwnyTail/.config/awesome/themes/black_hex_wallpaper_by_siege36.jpg", center = true},
-            {"/usr/home/PwnyTail/.config/awesome/themes/dark-fog-forest-wallpaper_1440-900.jpg", center = true},
+            {"/usr/home/PwnyTail/.config/awesome/themes/dark-fog-forest-wallpaper_1440-900.png", center = true},
             {"/usr/home/PwnyTail/.config/awesome/themes/dark-tamar20_1440-900.jpg", center = true},
             {"/usr/home/PwnyTail/.config/awesome/themes/dark-forest_street.png", center = true},
 }

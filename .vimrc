@@ -89,7 +89,7 @@ if has("autocmd")
   augroup vimrcEx
   au!
 
-  " For all text files set 'textwidth' to 78 characters.
+  " For all text files set 'textwidth' to 79 characters.
   autocmd FileType text setlocal textwidth=79
 
   " When editing a file, always jump to the last known cursor position.
@@ -111,8 +111,6 @@ if has("autocmd")
   autocmd BufEnter *.json set filetype=javascript
   autocmd BufEnter *.isml set filetype=html
   autocmd BufEnter *.ejs set filetype=html
-  "autocmd BufEnter *.py set syntax=pythone
-  "autocmd BufEnter *.cpp set syntax=cppe
 
   highlight ExtraWhitespace ctermbg=red guibg=red
   match ExtraWhitespace /\s\+$/
@@ -173,13 +171,13 @@ Bundle 'git://git.wincent.com/command-t.git'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_pyhon_checkers = ['py3kwarn'] 
 "let g:syntastic_python_py3kwarn_args = '--ignore=W191,E501,E121,E122,E123,E128,E225,W291,E195,E201,E302'
-let g:syntastic_c_checkers = ['clang']
+let g:syntastic_c_checkers = ['gcc']
 let g:syntastic_c_check_header = 1
 let g:syntastic_c_auto_refresh_includes = 1
 let g:syntastic_c_remove_include_errors = 1
-let g:syntastic_c_compiler = 'clang'
-let g:syntastic_cpp_checkers = ['clang++']
-let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_c_compiler = 'gcc'
+let g:syntastic_cpp_checkers = ['g++']
+let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_check_header = 1
 "set statusline=%F%m%r%h%w\ %y%=[Buffer\:\ %n][Lines\:\ %l\/%L][Column\:\ %c][%p%%]
 " Setup syntastic filetypes

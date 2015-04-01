@@ -1,7 +1,8 @@
+! '#' is for makros
 URxvt*termName: rxvt-unicode-256color
 URxvt*fading: 20
-URxvt*font: xft:Fixed:regular:size=12
-#URxvt*font: xft:Fixed:regular:size=14
+URxvt*font: xft:Fixed:Regular:size=14
+!URxvt*font: xft:Monospace:regular:size=12
 URxvt.depth: 32
 URxvt.thickness: 6.5
 URxvt*transparent: on
@@ -20,11 +21,15 @@ URxvt.cursorColor2: #384318
 URxvt.scrollBar: on
 URxvt.saveLines: 1000
 
-URxvt.perl-ext-common:default,tabbedex,matcher
+URxvt.perl-ext-common:default,tabbedex,matcher,font-size
 !URxvt.perl-ext-common:default,tabbed,matcher
 URxvt.tabbed.autohide: true
 URxvt.urlLauncher:  /usr/local/bin/firefox
 URxvt.matcher.button: 3
+URxvt.keysym.C-Up: perl:font-size:increase
+URxvt.keysym.C-Down: perl:font-size:decrease
+URxvt.keysym.C-S-Up: perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
 
 ! xclock ---------------------------------------------------------------------
 
