@@ -220,8 +220,7 @@ let g:ctrlp_show_hidden = 1
 " ------------------------------------------------------------------------------
 " Powerline
 " ------------------------------------------------------------------------------
-set rtp+=/usr/local/lib/python2.7/site-packages/Powerline-beta-py2.7.egg/powerline/bindings/vim
-
+"set rtp+=/usr/local/lib/python2.7/site-packages/powerline_status-2.2-py2.7.egg/powerline/bindings/vim
 "let g:Powerline_symbols = 'fancy'
 let g:powerline_symbols = 'compatible'
 let g:powerline_dividers_override = ['', '', '', '']
