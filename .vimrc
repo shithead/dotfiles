@@ -51,8 +51,9 @@ set t_Co=256
 set cursorline
 set laststatus=2
 set noshowmode
-colorscheme depression
-" colorscheme sunshine
+"colorscheme depression
+"colorscheme morning
+colorscheme evening
 
 " For Win32 GUI	: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptio	ns = substitute(&guioptions, "t", "", "g")
