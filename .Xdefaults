@@ -1,11 +1,12 @@
 ! '#' is for makros
 URxvt*termName: rxvt-unicode-256color
 URxvt*fading: 20
-URxvt*font: xft:Fixed:Regular:size=14
-!URxvt*font: xft:Monospace:regular:size=12
+!URxvt*font: xft:Fixed:Regular:size=14
+URxvt*font: xft:Monospace:regular:size=10
 URxvt.depth: 32
 URxvt.thickness: 6.5
-URxvt*transparent: on
+!URxvt*transparent: on
+URxvt*transparent: off
 URxvt*shading: 45
 !Urxvt.tabbed.tabbar-fg: 2
 !Urxvt.tabbed.tabbar-bg: 0
@@ -13,8 +14,10 @@ URxvt*shading: 45
 !Urxvt.tabbed.tab-bg: 6
 
 
-URxvt.foreground: grey90
-URxvt.background: gray50
+!URxvt.foreground: grey90
+URxvt.foreground: black
+!URxvt.background: gray50
+URxvt.background: white
 URxvt.cursorBlink: true
 URxvt.cursorColor: gray70
 URxvt.cursorColor2: #384318
