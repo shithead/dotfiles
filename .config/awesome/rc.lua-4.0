@@ -37,6 +37,90 @@ do
     end)
 end
 -- }}}
+
+
+-- {{{ Komponenten check calls
+
+-- Create a widget and update its content using the output of a shell
+-- command every 10 seconds:
+local mybatterybar = wibox.widget {
+    {
+        min_value    = 0,
+        max_value    = 100,
+        value        = 33,
+        paddings     = 1,
+        border_width = 1,
+        forced_width = 25,
+        border_color = "#777777",
+        id           = "mypb",
+        background_color = "#000000",
+        color           = "#b394c0",
+        widget       = wibox.widget.progressbar,
+    },
+    {
+        id           = "mytb",
+        text         = "33%",
+        align        = 'center',
+        font         = 'Fixed 5',
+        widget       = wibox.widget.textbox,
+    },
+    layout      = wibox.layout.stack,
+    battery_life = 0,
+    is_acline = 0,
+    set_battery = function(self, val)
+        self.battery_life = tonumber(val)
+        if self.is_acline == 0 then
+            if self.battery_life <= 25 then
+                self.mypb.background_color = "#f38836"
+            else
+                self.mypb.background_color = "#000000"
+            end
+        end
+        self.mytb.text  = self.battery_life.."%"
+        self.mypb.value = self.battery_life
+    end,
+    set_acline = function(self, val)
+        self.is_acline = tonumber(val)
+        if self.is_acline == 1 then
+            self.mypb.background_color = "#ffff00"
+        end
+    end,
+}
+
+
+
+-- hw.acpi.acline
+local function battery_is_acline(kstate)
+    local command = "sysctl " .. kstate
+    awful.spawn.easy_async_with_shell(command,function(out)
+        firstspace = out:find(" ")
+        cout = out:sub(firstspace+1)
+        -- naughty.notify { text = cout }
+        mybatterybar.acline = cout
+    end)
+end
+local function battery_life(kstate)
+    local command = "sysctl " .. kstate
+    awful.spawn.easy_async_with_shell(command,function(out)
+        firstspace = out:find(" ")
+        cout = out:sub(firstspace+1)
+        -- naughty.notify { text = cout }
+        mybatterybar.battery = cout
+    end)
+end
+
+gears.timer {
+    timeout   = 30,
+    call_now  = true,
+    autostart = true,
+    callback  = function()
+        battery_is_acline("hw.acpi.acline")
+        battery_life("hw.acpi.battery.life")
+    end
+}
+-- }}}
+
+
 -- {{{ Auto start
 function run_once( cmd )
   findme = cmd
@@ -237,6 +321,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
+            mybatterybar,
             mytextclock,
             s.mylayoutbox,
         },
