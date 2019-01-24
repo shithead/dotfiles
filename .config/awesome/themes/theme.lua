@@ -9,16 +9,16 @@ theme.font          = "Fixed 7"
 --background
 --
 theme.bg_normal     = "#0c0c0c"
-theme.bg_focus      = "#000000"
-theme.bg_urgent     = theme.bg_normal
+theme.bg_focus      = "#038aa8"
+theme.bg_urgent     = "#f38836"
 theme.bg_minimize   = "#44444455"
 theme.bg_systray    = theme.bg_normal
 
 -- foreground
 --
-theme.fg_normal     = "#ffffff"
-theme.fg_focus      = "#00BCE7"
-theme.fg_urgent     = "#ffffff"
+theme.fg_normal     = "#00BCE7"
+theme.fg_focus      = "#ffffff"
+theme.fg_urgent     = "#000000"
 theme.fg_minimize   = "#ffffff"
 
 
@@ -30,7 +30,7 @@ theme.border_marked = theme.fg_urgent
 -- }}}
 
 -- {{{ Titlebars
-theme.titlebar_bg_focus  = theme.bg_normal
+theme.titlebar_bg_focus  = theme.bg_focus
 theme.titlebar_bg_normal = theme.bg_normal
 -- theme.titlebar_[bg|fg]_[normal|focus]
 -- }}}
