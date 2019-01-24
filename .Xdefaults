@@ -1,8 +1,8 @@
 ! '#' is for makros
 URxvt*termName: rxvt-unicode-256color
 URxvt*fading: 20
-!URxvt*font: xft:Fixed:Regular:size=14
-URxvt*font: xft:Monospace:regular:size=10
+URxvt*font: xft:Fixed:Regular:size=14
+!URxvt*font: xft:Monospace:regular:size=10
 URxvt.depth: 32
 URxvt.thickness: 6.5
 !URxvt*transparent: on
