@@ -599,6 +599,8 @@ awful.rules.rules = {
       properties = { screen = 1, tag = "3" } },
     { rule = { class = "chrome" },
       properties = { screen = 1, tag = "3" } },
+    { rule = { class = "iridium" },
+      properties = { screen = 1, tag = "3" } },
 }
 -- }}}
 
