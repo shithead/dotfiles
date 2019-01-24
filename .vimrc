@@ -115,6 +115,7 @@ if has("autocmd")
   autocmd BufEnter *.json set filetype=javascript
   autocmd BufEnter *.isml set filetype=html
   autocmd BufEnter *.ejs set filetype=html
+  autocmd BufEnter *.pro set filetype=prolog
 
   highlight ExtraWhitespace ctermbg=red guibg=red
   match ExtraWhitespace /\s\+$/
